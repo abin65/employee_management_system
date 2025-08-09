@@ -1,0 +1,44 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'staff/style.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Office Website</title>
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .btn-custom {
+        min-width: 200px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+      <div class="card shadow p-4 w-100" style="max-width: 500px;">
+        <h2 class="text-center mb-4 text-primary">Welcome Everyone!</h2>
+
+        <div class="d-grid gap-3">
+          <a class="btn btn-outline-primary btn-custom" href="all_emp" role="button">View Employees</a>
+          <a class="btn btn-outline-success btn-custom" href="add_emp" role="button">Add Employee</a>
+          <a class="btn btn-outline-danger btn-custom" href="del_emp" role="button">Delete Employee</a>
+          <a class="btn btn-outline-secondary btn-custom" href="filter_emp" role="button">Filter Employees</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
